@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding; 0;
+}
+
+html, body{
+  width: 100vw;
+  height: 100vh;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: .5rem;
+}
+
+.titleLine{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: yellow;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.tableDiv{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: lightblue;
+  text-align: center;
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(11, [col-start] 1fr);
+  grid-gap: 5px;
+}
+
+.outline{
+  outline: 1px dotted gray;
+}
+
+.redniBroj{
+  grid-column: 1/2;
+}
+
+.odDatuma{
+  grid-column: 2/5;
+}
+
+.doDatuma{
+  grid-column: 5/8;
+}
+
+.beneficija{
+  grid-column: 8/9;
+}
+
+.godina{
+  grid-column: 9/10;
+}
+
+.meseci{
+  grid-column: 10/11;
+}
+
+.dana{
+  grid-column: 11/12;
+}
+
+.ukupno{
+  grid-column: 1/9;
+  text-align: right;
+}
+
+.dateDiv{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: center;
+  background-color: pink;
+  padding: 1rem 0;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.daysDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/4;
+  background-color: lightgreen;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  height: 100%;
+}
+
+/* .daysDiv span{
+  text-align: center;
+} */
