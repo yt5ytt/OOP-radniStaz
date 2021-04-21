@@ -11,7 +11,7 @@ html, body{
 main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: .5rem;
+  /* grid-gap: .5rem; */
 }
 
 .titleLine{
@@ -33,11 +33,11 @@ main{
   padding: 1rem 0;
   display: grid;
   grid-template-columns: repeat(11, [col-start] 1fr);
-  grid-gap: 5px;
+  grid-gap: 1px;
 }
 
 .outline{
-  outline: 1px dotted gray;
+  border: 1px dotted gray;
 }
 
 .redniBroj{
@@ -74,6 +74,9 @@ main{
 }
 
 .dateDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column-start: 3;
   grid-column-end: 4;
   text-align: center;
@@ -90,7 +93,6 @@ main{
   grid-column: 1/4;
   background-color: lightgreen;
   text-align: center;
-  padding: 1rem 0;
   font-size: 5rem;
   text-transform: uppercase;
   font-weight: bolder;

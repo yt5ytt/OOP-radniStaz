@@ -9,8 +9,10 @@
   </div>
 
   <div class="dateDiv">
-      <p><?php echo date('d.m.Y.'); ?></p>
+    <div>
+      <p><?php echo date('d.m.Y.') . '<br />'; ?></p>
       <p><?php echo date('H:i'); ?></p>
+    </div>
   </div>
 
   <div class="daysDiv">
@@ -19,8 +21,15 @@
 
       $doPenzije = new DoPenzije();
       $dana = $doPenzije->doPenzije();
-      echo '<span>Dana do penzije<br />
-      <h2>' . $dana . '</h2></span>';
-     ?>
+    ?>
+      <div>
+
+        <?php
+          echo '<span>Dana do penzije<br />
+          <h1>' . $dana . '</h1></span>';
+         ?>
+
+      </div>
+
   </div>
 </main>
