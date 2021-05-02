@@ -4,17 +4,20 @@
 }
 
 html, body{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* grid-gap: .5rem; */
+  height: 100%;
 }
 
 .titleLine{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column-start: 1;
   grid-column-end: 4;
   background-color: yellow;
@@ -34,6 +37,16 @@ main{
   display: grid;
   grid-template-columns: repeat(11, [col-start] 1fr);
   grid-gap: 1px;
+}
+
+.tableDiv div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableDiv div.ukupno{
+  justify-content: flex-end;
 }
 
 .outline{
@@ -98,7 +111,3 @@ main{
   font-weight: bolder;
   height: 100%;
 }
-
-/* .daysDiv span{
-  text-align: center;
-} */

@@ -1,7 +1,7 @@
 <main>
   <div class="titleLine">
-    Radni staž za<br />
-    <h2>Aleksandar Šafranec</h2>
+    <p>Radni staž za</p>
+    <p><h2>Aleksandar Šafranec</h2></p>
   </div>
 
   <div class="tableDiv">
