@@ -2,8 +2,8 @@
 
   <div class="titleLine">
 
-    <div class="wholeWidth">Radni staž za</div>
-    <div class="wholeWidth"><h2>Aleksandar Šafranec</h2></div>
+    Radni staž za<br />
+    <h2>Aleksandar Šafranec</h2>
 
   </div><!-- end of .titleLine -->
 
@@ -15,8 +15,8 @@
 
   <div class="dateDiv">
 
-    <div class="wholeWidth"><?php echo date('d.m.Y.'); ?></div>
-    <div class="wholeWidth"><?php echo date('H:i'); ?></div>
+    <?php echo date('d.m.Y.') . '<br />'; ?>
+    <?php echo date('H:i'); ?>
 
   </div><!-- end of .dateDiv -->
 
@@ -29,8 +29,8 @@
       $dana = $doPenzije->doPenzije();
     ?>
 
-     <div class="wholeWidth">Dana do penzije</div>
-     <div class="wholeWidth"><?php echo '<h1>' . $dana . '</h1>'; ?></div>
+     Dana do penzije<br />
+     <?php echo '<h1>' . $dana . '</h1>'; ?>
 
   </div><!-- end of .daysDiv -->
 

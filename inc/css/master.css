@@ -15,10 +15,9 @@ main{
 }
 
 .titleLine{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
   grid-column-start: 1;
   grid-column-end: 4;
   background-color: yellow;
@@ -45,13 +44,14 @@ main{
 }
 
 .tableDiv div{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
 }
 
 .tableDiv div.ukupno{
-  justify-content: flex-end;
+  justify-items: right;
+  padding-right: 1rem;
 }
 
 .outline{
@@ -92,24 +92,21 @@ main{
 }
 
 .dateDiv{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
   grid-column-start: 3;
   grid-column-end: 4;
   text-align: center;
   background-color: pink;
-  /* padding: 1rem 0; */
   font-size: 3rem;
   font-weight: bolder;
 }
 
 .daysDiv{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
   grid-column: 1/4;
   background-color: lightgreen;
   text-align: center;
