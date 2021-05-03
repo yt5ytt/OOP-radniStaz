@@ -1,35 +1,37 @@
 <main>
+
   <div class="titleLine">
-    <p>Radni staž za</p>
-    <p><h2>Aleksandar Šafranec</h2></p>
-  </div>
+
+    <div class="wholeWidth">Radni staž za</div>
+    <div class="wholeWidth"><h2>Aleksandar Šafranec</h2></div>
+
+  </div><!-- end of .titleLine -->
 
   <div class="tableDiv">
+
     <?php include(ABSPATH . 'inc/table.inc.php'); ?>
-  </div>
+
+  </div><!-- end of .tableDiv -->
 
   <div class="dateDiv">
-    <div>
-      <p><?php echo date('d.m.Y.') . '<br />'; ?></p>
-      <p><?php echo date('H:i'); ?></p>
-    </div>
-  </div>
+
+    <div class="wholeWidth"><?php echo date('d.m.Y.'); ?></div>
+    <div class="wholeWidth"><?php echo date('H:i'); ?></div>
+
+  </div><!-- end of .dateDiv -->
 
   <div class="daysDiv">
+
     <?php
       use App\DoPenzije;
 
       $doPenzije = new DoPenzije();
       $dana = $doPenzije->doPenzije();
     ?>
-      <div>
 
-        <?php
-          echo '<span>Dana do penzije<br />
-          <h1>' . $dana . '</h1></span>';
-         ?>
+     <div class="wholeWidth">Dana do penzije</div>
+     <div class="wholeWidth"><?php echo '<h1>' . $dana . '</h1>'; ?></div>
 
-      </div>
+  </div><!-- end of .daysDiv -->
 
-  </div>
-</main>
+</main><!-- end of main -->
